@@ -1,28 +1,31 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Topic = ({topic}) => {
     const {id, name, logo, total} = topic;
     return (
         <div>
             <div>
-                <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+                <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm border">
                     <img
                         src={logo}
-                        className="object-cover w-full h-72"
+                        className="object-cover w-full h-72 p-2 rounded"
                         alt=""
                     />
-                    <div className="p-5 border border-t-0">
-                        <p className="mb-2 text-gray-700">
-                        Sed ut perspiciatis unde omnis iste natus error sit sed quia
-                        consequuntur magni voluptatem doloremque.
+                    <div className="p-5 flex justify-between items-center border border-t-0">
+                        <p className="text-xl">
+                        {name}
                         </p>
-                        <a
-                        href="/"
+                        <Link
+                        to={`/topic/${id}`}
                         aria-label=""
-                        className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                        className="font-semibold flex items-center gap-3 bg-cyan-600 p-2 rounded-md duration-200 text-white hover:bg-cyan-800"
                         >
-                        Learn more
-                        </a>
+                        <p>Start Practice</p>
+                        <FontAwesomeIcon icon={faArrowRight}/>
+                        </Link>
                     </div>
                 </div>
                 

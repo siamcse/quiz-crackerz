@@ -3,6 +3,8 @@ import Main from "../../layouts/Main";
 import About from "../About/About";
 import Blog from "../Blog/Blog";
 import Error from "../Error/Error";
+import Home from "../Home/Home";
+import Quiz from "../Quiz/Quiz";
 import Statistics from "../Statistics/Statistics";
 import Topics from "../Topics/Topics";
 
@@ -14,7 +16,10 @@ export const router = createBrowserRouter([
         children:[
             {
                 path:'/',
-                element: <Topics></Topics>
+                loader: async()=>{
+                    return fetch('https://openapi.programming-hero.com/api/quiz');
+                },
+                element: <Home/>
             },
             {
                 path:'topics',
@@ -32,8 +37,11 @@ export const router = createBrowserRouter([
                 element: <Blog></Blog>
             },
             {
-                path:'about',
-                element: <About></About>
+                path:'/topic/:topicId',
+                loader: async({params})=>{
+                    return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`);
+                },
+                element: <Quiz/>
             }
         ]
     }
