@@ -1,9 +1,20 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Header from '../Header/Header';
+import Topic from '../Topic/Topic';
 
 const Topics = () => {
+    const topics = useLoaderData().data;
+    console.log(topics);
     return (
         <div>
-            <h2>Topics</h2>
+            <Header></Header>
+            {
+                topics.map(topic=> <Topic 
+                    key={topic.id}
+                    topic={topic}
+                />)
+            }
         </div>
     );
 };
