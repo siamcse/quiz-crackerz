@@ -2,10 +2,10 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className='relative'>
+        <div className='relative mt-36 md:mt-10'>
           <img
-        src="https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-        className="absolute inset-0 object-cover w-full h-64"
+        src="https://thumbs.dreamstime.com/b/ai-machine-learning-hands-robot-human-touching-big-data-network-connection-background-science-artificial-intelligence-172987598.jpg"
+        className="absolute inset-0 object-cover w-full h-full"
         alt=""
       />
           <div className='relative bg-gray-700 bg-opacity-75'>
