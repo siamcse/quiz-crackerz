@@ -1,9 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../layouts/Main";
-import About from "../About/About";
 import Blog from "../Blog/Blog";
 import Error from "../Error/Error";
-import Home from "../Home/Home";
 import { loadDataFromApi } from "../Loaders/Loader";
 import Quiz from "../Quiz/Quiz";
 import Statistics from "../Statistics/Statistics";
@@ -18,7 +16,7 @@ export const router = createBrowserRouter([
             {
                 path:'/',
                 loader: loadDataFromApi,
-                element: <Home/>
+                element: <Topics/>
             },
             {
                 path:'topics',

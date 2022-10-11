@@ -1,27 +1,22 @@
-import { Alert } from '@mui/material';
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Question from '../Question/Question';
 
 const Quiz = () => {
     const quiz = useLoaderData().data;
-    const {id,name,questions,total} = quiz;
-    console.log(questions);
-    const [quizAns, setQuizAns] = useState('');
+    const {id,name,questions} = quiz;
     const handleAns = (option,correctAnswer)=>{
-        console.log(option);
-        console.log(correctAnswer);
+
         if(correctAnswer===option){
-            alert('Correct ans')
+            toast("Your answer is correct !");
         }
         else{
-            <Alert severity="error">This is an error alert — check it out!</Alert>
+            toast("Wrong Answer !");
         }
     }
-    const handleShowAns = (id) =>{
-        const selectQues = questions.find(q=>q.id===id);
-        setQuizAns(selectQues.correctAnswer);    
-    }
+
     return (
         <div>
             <h2 className='text-3xl text-blue-400'>Quiz of {name}</h2>
@@ -30,11 +25,21 @@ const Quiz = () => {
                     key={qs.id}
                     qs={qs}
                     index={index}
-                    handleShowAns={handleShowAns}
-                    quizAns={quizAns}
                     handleAns={handleAns}
                 />)
             }
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
         </div>
     );
 };

@@ -4,14 +4,14 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const Topic = ({topic}) => {
-    const {id, name, logo, total} = topic;
+    const {id, name, logo} = topic;
     return (
         <div>
             <div>
                 <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm border">
                     <img
                         src={logo}
-                        className="object-cover w-full h-72 p-2 rounded"
+                        className="object-cover w-full h-72 p-2 rounded bg-gray-200"
                         alt=""
                     />
                     <div className="p-5 flex justify-between items-center border border-t-0">

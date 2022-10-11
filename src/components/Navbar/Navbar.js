@@ -63,16 +63,6 @@ export const Navbar = () => {
               Blog
             </Link>
           </li>
-          <li>
-            <Link
-              to="/about"
-              aria-label="About us"
-              title="About us"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-            >
-              About us
-            </Link>
-          </li>
           
         </ul>
         <div className="lg:hidden">
@@ -123,8 +113,8 @@ export const Navbar = () => {
                         <rect x="14" y="1" width="7" height="6" />
                         <rect x="14" y="11" width="7" height="12" />
                       </svg>
-                      <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                        Company
+                      <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
+                        eLearning
                       </span>
                     </Link>
                   </div>
@@ -148,42 +138,32 @@ export const Navbar = () => {
                   <ul className="space-y-4">
                     <li>
                       <Link
-                        to="/"
+                        to="/topics"
                         aria-label="Our product"
                         title="Our product"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        Product
+                        Topics
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to="/"
+                        to="/statistics"
                         aria-label="Our product"
                         title="Our product"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        Features
+                        Statistics
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to="/"
+                        to="/blog"
                         aria-label="Product pricing"
                         title="Product pricing"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        Pricing
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/"
-                        aria-label="About us"
-                        title="About us"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                      >
-                        About us
+                        Blog
                       </Link>
                     </li>
                     
