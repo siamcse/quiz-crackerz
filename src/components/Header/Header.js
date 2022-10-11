@@ -2,14 +2,18 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
+        <div className='relative'>
+          <img
+        src="https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+        className="absolute inset-0 object-cover w-full h-64"
+        alt=""
+      />
+          <div className='relative bg-gray-700 bg-opacity-75'>
+            <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-            Brand new
-          </p>
         </div>
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-300 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -37,12 +41,13 @@ const Header = () => {
           </span>{' '}
           faster. Stay motivated. Study smarter.
         </h2>
-        <p className="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque rem aperiam, eaque ipsa quae.
+        <p className="text-base text-white md:text-lg">
+          Practice makes a man perfect is a proverb which tells us the importance of continuous practice in any subject to learn anything. There is no alternate to the hard work and success. We must have to practice in the particular field on regular basis in which we want to succeed.
         </p>
       </div>
     </div>
+          </div>
+        </div>
     );
 };
 

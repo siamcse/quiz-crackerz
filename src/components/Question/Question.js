@@ -37,17 +37,17 @@ const Question = ({qs,index,handleShowAns,handleAns}) => {
                     
                 </p>
                 <div className={show ? '' : 'hidden'}>
-                <Alert
-                    color="success"
-                    onDismiss={function onDismiss() { handleAnsView() }}>
-                    <span>
-                        <span className="font-medium">
-                            Correct Answer :
+                    <Alert
+                        color="success"
+                        onDismiss={function onDismiss() { handleAnsView() }}>
+                        <span>
+                            <span className="font-medium">
+                                Correct Answer :
+                            </span>
+                            {' '}{correctAnswer}
                         </span>
-                        {' '}{correctAnswer}
-                    </span>
-                </Alert>
-            </div>
+                    </Alert>
+                </div>
                 </div>
                 
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -6,14 +6,14 @@ import Question from '../Question/Question';
 
 const Quiz = () => {
     const quiz = useLoaderData().data;
-    const {id,name,questions} = quiz;
+    const {name,questions} = quiz;
     const handleAns = (option,correctAnswer)=>{
 
         if(correctAnswer===option){
-            toast("Your answer is correct !");
+            toast.success("Your answer is correct !");
         }
         else{
-            toast("Wrong Answer !");
+            toast.warning("Wrong Answer !");
         }
     }
 
@@ -30,7 +30,7 @@ const Quiz = () => {
             }
             <ToastContainer
                 position="top-center"
-                autoClose={5000}
+                autoClose={1500}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
