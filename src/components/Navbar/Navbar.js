@@ -9,22 +9,18 @@ export const Navbar = () => {
       <div className="relative flex items-center justify-between lg:max-w-screen-xl mx-auto">
         <Link
           to="/"
-          aria-label="Company"
-          title="Company"
           className="inline-flex items-center"
         >
           <img className='w-16' src="https://img.freepik.com/premium-vector/e-learning-concept-logo-learning-online-center-graduation-vector-illustration-flat-design-abstract-background-education-logo-template-online-education-internet-teaching-distance-training_153097-834.jpg?w=2000" alt="" />
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
-            eLearning
+          <span className="ml-2 text-xl font-bold tracking-wide text-cyan-700">
+            e-Learning
           </span>
         </Link>
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
             <Link
               to="/topics"
-              aria-label="Our product"
-              title="Our product"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:bg-emerald-300 p-2 rounded"
             >
               Topics
             </Link>
@@ -32,9 +28,7 @@ export const Navbar = () => {
           <li>
             <Link
               to="/statistics"
-              aria-label="Our product"
-              title="Our product"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:bg-emerald-300 p-2 rounded"
             >
               Statistics
             </Link>
@@ -42,9 +36,7 @@ export const Navbar = () => {
           <li>
             <Link
               to="/blog"
-              aria-label="Product pricing"
-              title="Product pricing"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:bg-emerald-300 p-2 rounded"
             >
               Blog
             </Link>
@@ -80,13 +72,11 @@ export const Navbar = () => {
                   <div>
                     <Link
                       to="/"
-                      aria-label="Company"
-                      title="Company"
                       className="inline-flex items-center"
                     >
                       <img className='w-12' src="https://img.freepik.com/premium-vector/e-learning-concept-logo-learning-online-center-graduation-vector-illustration-flat-design-abstract-background-education-logo-template-online-education-internet-teaching-distance-training_153097-834.jpg?w=2000" alt="" />
-                      <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
-                        eLearning
+                      <span className="ml-2 text-xl font-bold tracking-wide text-cyan-700">
+                        e-Learning
                       </span>
                     </Link>
                   </div>
@@ -111,9 +101,7 @@ export const Navbar = () => {
                     <li>
                       <Link
                         to="/topics"
-                        aria-label="Our product"
-                        title="Our product"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:bg-emerald-300 p-2 rounded"
                       >
                         Topics
                       </Link>
@@ -121,9 +109,7 @@ export const Navbar = () => {
                     <li>
                       <Link
                         to="/statistics"
-                        aria-label="Our product"
-                        title="Our product"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:bg-emerald-300 p-2 rounded"
                       >
                         Statistics
                       </Link>
@@ -131,9 +117,7 @@ export const Navbar = () => {
                     <li>
                       <Link
                         to="/blog"
-                        aria-label="Product pricing"
-                        title="Product pricing"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:bg-emerald-300 p-2 rounded"
                       >
                         Blog
                       </Link>

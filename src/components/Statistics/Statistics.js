@@ -6,8 +6,8 @@ const Statistics = () => {
     const topics = useLoaderData().data;
     return (
         <div>
-            <h2 className='text-3xl text-blue-400 '>Quiz Statistics</h2>
-            <div className='flex flex-col justify-center items-center min-h-screen'>
+            <h2 className='text-3xl text-cyan-600 mt-4'>Quiz Statistics</h2>
+            <div className='flex justify-center items-center min-h-screen'>
                 <LineChart width={500} height={300} data={topics}>
                     <Line type="monotone" dataKey="total" stroke="#82ca9d" />
                     <CartesianGrid strokeDasharray="3 3" />

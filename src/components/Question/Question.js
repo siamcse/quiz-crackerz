@@ -12,7 +12,7 @@ const Question = ({qs,index,handleShowAns,handleAns}) => {
     }
     
     return (
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-3xl md:px-24 lg:px-8 lg:py-20">
+        <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-3xl md:px-24 lg:px-8 lg:py-10">
             <div>
                 <div className="p-8 border rounded shadow-sm">
                 <div className='flex flex-col md:flex-row justify-between items-center md:items-start md:gap-6'>

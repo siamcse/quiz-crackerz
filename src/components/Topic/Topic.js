@@ -4,7 +4,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const Topic = ({topic}) => {
-    const {id, name, logo} = topic;
+    const {id, name, logo, total} = topic;
     return (
         <div>
             <div>
@@ -14,10 +14,11 @@ const Topic = ({topic}) => {
                         className="object-cover w-full h-72 p-2 rounded bg-gray-200"
                         alt=""
                     />
-                    <div className="p-5 flex justify-between items-center border border-t-0">
-                        <p className="text-xl">
-                        {name}
-                        </p>
+                    <div className="p-2 flex justify-between items-center border border-t-0">
+                        <div className='flex flex-col items-start'>
+                            <p className="text-xl font-semibold">{name}</p>
+                            <p>Questions: <span className='text-green-700 font-bold'>{total}</span></p>
+                        </div>
                         <Link
                         to={`/topic/${id}`}
                         aria-label=""
