@@ -8,7 +8,7 @@ const Quiz = () => {
     console.log(quiz);
     return (
         <div>
-            <h2 className='text-2xl'>Quiz of {name}</h2>
+            <h2 className='text-3xl text-blue-400'>Quiz of {name}</h2>
             {
                 questions.map((qs,index)=> <Question
                     key={qs.id}

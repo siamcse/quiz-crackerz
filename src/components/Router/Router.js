@@ -4,6 +4,7 @@ import About from "../About/About";
 import Blog from "../Blog/Blog";
 import Error from "../Error/Error";
 import Home from "../Home/Home";
+import { loadDataFromApi } from "../Loaders/Loader";
 import Quiz from "../Quiz/Quiz";
 import Statistics from "../Statistics/Statistics";
 import Topics from "../Topics/Topics";
@@ -16,20 +17,17 @@ export const router = createBrowserRouter([
         children:[
             {
                 path:'/',
-                loader: async()=>{
-                    return fetch('https://openapi.programming-hero.com/api/quiz');
-                },
+                loader: loadDataFromApi,
                 element: <Home/>
             },
             {
                 path:'topics',
-                loader: async()=>{
-                    return fetch('https://openapi.programming-hero.com/api/quiz');
-                },
+                loader: loadDataFromApi,
                 element: <Topics></Topics>
             },
             {
                 path: 'statistics',
+                loader: loadDataFromApi,
                 element: <Statistics></Statistics>
             },
             {
